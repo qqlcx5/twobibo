@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .header {
+            height: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left {
+            min-width: 1rem;
+            line-height: 0.6rem;
+            padding-left: 0.2rem;
+            text-align: left;
+        }
+
+        .header-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content-item {
+            display: flex;
+            width: 2rem;
+            height: 0.6rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content-item-title {
+            display: flex;
+            justify-content: center;
+            color: #000;
+            width: 0.72rem;
+            height: 0.6rem;
+            box-sizing: border-box;
+            align-items: center;
+            font-size: 0.36rem;
+        }
+
+        .noSelected {
+            color: #8cafea;
+            border-bottom: 0.04rem solid #8cafea;
+        }
+
+        .header-right {
+            text-align: right;
+            min-width: 1rem;
+        }
+
+        .add-icon {
+            font-size: 0.55rem;
+            color: #d8d8d8;
+            padding-right: 0.2rem;
+        }
+
+        .search-box {
+            width: 100%;
+            height: 1.2rem;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search {
+            width: 6rem;
+            height: 0.7rem;
+            background-color: #ffffff;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b6b6b6;
+        }
+
+        .search-icon {
+            margin-right: 0.1rem;
+        }
+
+        .friend-li {
+            width: 100%;
+            height: 0.8rem;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .border-bot {
+            border-bottom: 0.02rem solid #f7f7f7;
+        }
+
+        .mglr {
+            margin: 0 0.2rem;
+        }
+
+        .Addressbook {
+            height: 5rem;
+            width: 100%;
+            background: #000;
+        }
+
+        .Addressbook-title {
+            height: 0.6rem;
+            width: 100%;
+            background: #f7f7f7;
+            padding-left: 0.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .Addressbook-item {
+            width: 100%;
+            height: 1.6rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            padding-left: 0.2rem;
+            border-bottom: 0.04rem solid #f7f7f7;
+        }
+
+        .Addressbook-item-img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        .Addressbook-item-img img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0px;
+            height: 1rem;
+            width: 100%;
+            box-shadow: 0px -1px 1px 0px rgba(238, 238, 238, 0.5);
+            text-align: center;
+            z-index: 99;
+            background-color: #fff;
+        }
+
+        .footer-item {
+            float: left;
+            width: 25%;
+            height: 100%;
+            padding-top: 0.12rem;
+        }
+
+        .footer-item img {
+            width: 0.48rem;
+            height: 0.48rem;
+            margin-bottom: 0.1rem
+        }
+
+        .footer-item p {
+            font-size: 0.2rem;
+            color: #b6b6b6;
+        }
+
+        .footer-tab-selected {
+            color: #8cafea !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+
+        </div>
+        <div class="header-content">
+            <div class="header-content-item">
+                <div class="header-content-item-title noSelected">聊天</div>
+                <div class="header-content-item-title">朋友</div>
+            </div>
+
+        </div>
+        <div class="header-right">
+            <span class="iconfont add-icon">&#xe626;</span>
+        </div>
+    </div>
+    <div class="search-box">
+        <div class="search">
+            <span class="iconfont search-icon">&#xe626;</span>
+            搜索
+        </div>
+    </div>
+    <div class="friend-box">
+        <ul>
+            <li class="friend-li border-bot">
+                <img src="../icon/朋友%20copy.png" alt="" class="mglr"> 新的朋友
+            </li>
+            <li class="friend-li">
+                <img src="../icon/通讯录%20copy@1x.png" alt="" class="mglr"> 手机联系人
+            </li>
+        </ul>
+    </div>
+    <div class="Addressbook">
+        <div class="Addressbook-title">
+            A
+        </div>
+        <div class="Addressbook-list">
+            <ul>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+            </ul>
+        </div>
+        <div class="Addressbook-title">
+            B
+        </div>
+        <div class="Addressbook-list">
+            <ul>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <img src="../icon/商城1@2x.png" alt="">
+            <p>商城</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/财富1@2x.png" alt="">
+            <p>财富</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/社交1@2x.png" alt="">
+            <p>社交</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/我的2@2x.png" alt="">
+            <p class="footer-tab-selected">我的</p>
+        </div>
+    </footer>
+</body>
+
+</html>

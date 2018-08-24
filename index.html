@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/border.css">
+    <title>Document</title>
+    <style>
+
+        .header {
+            width: 100%;
+            height: 4.8rem;
+            background: url("icon/index-818.png") no-repeat center;
+            background-size: 100% 4.8rem;
+        }
+
+        .header-top {
+            margin-top: 0.4rem;
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            height: .52rem;
+
+        }
+
+        .mglr {
+            margin: 0 0.4rem;
+        }
+
+        .header-input img {
+            margin-right: 0.2rem;
+        }
+
+        .header-input {
+            flex: 1;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            height: 0.52rem;
+            border-radius: 0.32rem;
+        }
+
+        .icon-box {
+            padding: 0 0.4rem;
+        }
+
+        .icon-title {
+            z-index: 1;
+            width: 100%;
+            height: 1.72rem;
+            display: inline-flex;
+            margin-top: -0.4rem;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 2px 0px rgba(225, 225, 225, 0.5);
+        }
+
+        .icon-item {
+            flex: 0 0 25%;
+            height: 1.72rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-desc {
+            line-height: 0.4rem;
+            color: #7d7d7d;
+        }
+
+        .recommend {
+            display: flex;
+            height: 90px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .recommend-h1 {
+            font-size: 0.32rem;
+            font-weight: 600;
+            line-height: 0.8rem;
+            color: #585858;
+        }
+
+        .recommend-h3 {
+            color: #b6b6b6;
+        }
+
+        .card-box {
+            padding: 0 0.4rem;
+        }
+
+        .card-item {
+            width: 100%;
+            height: 4rem;
+            background:url("icon/index-card.png") no-repeat center;
+            background-size: 100% 4rem;
+            border-radius: 0.2rem;
+            position: relative;
+        }
+
+        .card-desc {
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 1.4rem;
+            background-color: #fff;
+            box-shadow: 0px 1px 1px 0px rgba(213, 213, 213, 0.5);
+        }
+
+        .card-desc-h1 {
+            margin-left: 0.5rem;
+            color: #b6b6b6;
+            line-height: 0.7rem;
+            font-size: 0.32rem;
+        }
+
+        .card-desc-h3 {
+            margin-left: 0.5rem;
+            color: #E97B78;
+            font-size: 0.4rem;
+        }
+
+        .card-desc-btn {
+            width: 1.54rem;
+            height: .74rem;
+            background-color: #8cafea;
+            border-radius: 0.2rem;
+            position: absolute;
+            right: 0.4rem;
+            bottom: 50%;
+            top: .37rem;
+            color: #ffffff;
+            font-size: .36rem;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0px;
+            height: 1rem;
+            width: 100%;
+            box-shadow: 0px -1px 1px 0px rgba(238, 238, 238, 0.5);
+            text-align: center;
+            z-index: 99;
+            background-color: #fff;
+        }
+
+        .footer-item {
+            float: left;
+            width: 25%;
+            height: 100%;
+            padding-top: 0.12rem;
+        }
+
+        .footer-item img {
+            width: 0.48rem;
+            height: 0.48rem;
+            margin-bottom: 0.1rem
+        }
+
+        .footer-item p {
+            font-size: 0.2rem;
+            color: #b6b6b6;
+        }
+
+        .footer-tab-selected {
+            color: #8cafea !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="mglr">
+                <img src="icon/扫一扫.png" alt="">
+            </div>
+            <div class="header-input">
+                <img src="icon/搜索 copy.png" alt=""> 搜索
+            </div>
+            <div class="mglr">
+                <img src="icon/照相 copy.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="icon-box">
+        <div class="icon-title">
+            <div class="icon-item">
+                <div>
+                    <img src="icon/人气推荐.png" alt="">
+                </div>
+                <div class="icon-desc">
+                    人气推荐
+                </div>
+            </div>
+            <div class="icon-item">
+                <div>
+                    <img src="icon/优惠活动.png" alt="">
+                </div>
+                <div class="icon-desc">
+                    优惠活动
+                </div>
+            </div>
+            <div class="icon-item">
+                <div>
+                    <img src="icon/最新上架.png" alt="">
+                </div>
+                <div class="icon-desc">
+                    最新上架
+                </div>
+            </div>
+            <div class="icon-item">
+                <div>
+                    <img src="icon/全部分类.png" alt="">
+                </div>
+                <div class="icon-desc">
+                    全部分类
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="recommend">
+        <h1 class="recommend-h1">热卖推荐</h1>
+        <h3 class="recommend-h3">碧波币（bibobi）是一种P2P形式的数字货币。</h3>
+    </div>
+    <div class="card-box">
+        <div class="card-item">
+            <div></div>
+            <div class="card-desc">
+                <h1 class="card-desc-h1">碧波币</h1>
+                <h3 class="card-desc-h3">1.256&nbsp;NYC</h3>
+                <button class="card-desc-btn">购买</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item" onClick="location.href='index.html'">
+            <img src="icon/shangcheng2@2x.png" alt="">
+            <p class="footer-tab-selected">商城</p>
+        </div>
+        <div class="footer-item" onClick="location.href='wealth/myAssets.html'">
+            <img src="icon/wealth1@2x.png" alt="">
+            <p >财富</p>
+        </div>
+        <div class="footer-item" onClick="location.href='social/chat.html'">
+            <img src="icon/social1@2x.png" alt="">
+            <p>社交</p>
+        </div>
+        <div class="footer-item" onClick="location.href='my/my.html'">
+            <img src="icon/my1@2x.png" alt="">
+            <p>我的</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>

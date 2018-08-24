@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/border.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<style type="text/css">
+			body {
+				width: 100%;
+				height: 100vh;
+
+			}
+			
+			header {
+				width: 100%;
+				height: 3.85rem;
+				overflow: hidden;
+				text-align: center;
+				position: relative;
+			}
+			
+			.setting-btn {
+				position: absolute;
+				width: 0.48rem;
+				top: 10%;
+				right: 0.32rem;
+			}
+			
+			.header-bg {
+				width: 110%;
+				margin-left: -5%;
+				height: 3.85rem;
+				/* background-image: url(../static/bg.jpg); */
+				-webkit-clip-path: inset(0 round 0 0 50% 50%);
+				overflow: hidden;
+				-webkit-filter: blur(0.05rem);
+				/* Chrome, Opera */
+				-moz-filter: blur(0.05rem);
+				-ms-filter: blur(0.05rem);
+				filter: blur(0.05rem);
+			}
+			
+			.black-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: 0.3;
+			}
+			
+			.user-info {
+				position: absolute;
+				top: 10%;
+				width: 100%;
+			}
+			
+			.face-bg {
+				width: 100vw;
+				margin-top: -10%;
+			}
+			
+			.face {
+				width: 1.75rem;
+				height: 1.75rem;
+				-webkit-clip-path: circle(50% at 50% 50%);
+			}
+			
+			.user-nick {
+				font-size: 0.36rem;
+				color: #fff;
+				margin-top: 0.2rem;
+			}
+			
+			.username {
+				font-size: 0.24rem;
+				color: #fff;
+				margin-top: 0.2rem;
+				opacity: 0.9;
+			}
+			
+			.title {
+				font-size: 0.32rem;
+				color: #b6b6b6;
+				height: 0.6rem;
+				line-height: 0.6rem;
+				padding-left: 0.2rem;
+			}
+			
+			.server-table {
+				width: 100%;
+				text-align: center;
+				vertical-align: middle;
+				border-top: 1px solid #e5e5e5;
+			}
+			
+			.server-table tr {
+				height: 2.5rem;
+			}
+			
+			.server-table td {
+
+				border-bottom: 1px solid #e5e5e5;
+				border-right: 1px solid #e5e5e5;
+			}
+			
+			.no-right-border {
+				border-right: none!important;
+			}
+			
+			.table-icon {
+				width: 0.8rem;
+			}
+			
+			.table-text {
+				margin-top: 0.2rem;
+				color: #5c5c5c;
+			}
+			
+			footer {
+				position: fixed;
+				bottom: 0px;
+				height: 1rem;
+				width: 100%;
+				box-shadow: 0px -1px 1px 0px rgba(238, 238, 238, 0.5);
+				text-align: center;
+				z-index: 99;
+				background-color: #fff;
+			}
+			
+			.footer-item {
+				float: left;
+				width: 25%;
+				height: 100%;
+				padding-top: 0.12rem;
+			}
+			
+			.footer-item img {
+				width: 0.48rem;
+				height: 0.48rem;
+				margin-bottom: 0.1rem
+			}
+			
+			.footer-item p {
+				font-size: 0.2rem;
+				color: #b6b6b6;
+			}
+			
+			.footer-tab-selected {
+				color: #8cafea!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-bg">
+				<img src="../icon/bg.jpg" class="face-bg">
+				<div class="black-bg"></div>
+			</div>
+			<img class="setting-btn" src="../icon/setting@2x.png" alt="">
+			<div class="user-info">
+				<img src="../icon/bg.jpg" alt="" class="face">
+				<p class="user-nick">克里斯</p>
+				<p class="username">帐号：kls123123123</p>
+			</div>
+		</header>
+		<div class="body-content">
+			<p class="title">碧波服务</p>
+			<table class="server-table" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<img src="../icon/jiaoyijilu@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">交易记录</p>
+					</td>
+					<td>
+						<img src="../icon/kaidianshezhi@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">开店设置</p>
+					</td>
+					<td class="no-right-border">
+						<img src="../icon/lianxikefu@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">联系客服</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="../icon/bishangshezhi@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">币商设置</p>
+					</td>
+					<td>
+						<img src="../icon/gongzhonghao@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">联系公众号</p>
+					</td>
+					<td class="no-right-border">
+						<img src="../icon/xitongshezhi@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">系统设置</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			<div class="footer-item" onClick="location.href='../index.html'">
+				<img src="../icon/shangcheng1@2x.png" alt="">
+				<p>商城</p>
+			</div>
+			<div class="footer-item" onClick="location.href='../wealth/myAssets.html'">
+				<img src="../icon/wealth1@2x.png" alt="">
+				<p >财富</p>
+			</div>
+			<div class="footer-item" onClick="location.href='../social/chat.html'">
+				<img src="../icon/social1@2x.png" alt="">
+				<p>社交</p>
+			</div>
+			<div class="footer-item" onClick="location.href='../my/my.html'">
+				<img src="../icon/my2@2x.png" alt="">
+				<p class="footer-tab-selected">我的</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

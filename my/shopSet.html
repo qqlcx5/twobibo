@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>开店设置</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/border.css" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100vh;
+			background: #fff;
+		}
+		
+		header {
+			width: 100%;
+			height: 3.6rem;
+			overflow: hidden;
+			text-align: center;
+			position: relative;
+		}
+		
+		.setting-btn {
+			position: absolute;
+			width: 0.48rem;
+			top: 10%;
+			right: 0.32rem;
+		}
+		
+		.header-bg {
+			width: 100%;
+			height: 3.6rem;
+			overflow: hidden;
+			-webkit-filter: blur(0.1rem);
+			-moz-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.black-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.3;
+		}
+		
+		.face-bg {
+			width: 100vw;
+			margin-top: -10%;
+		}
+		
+		.header-top {
+			position: absolute;
+			top: 0;
+			height: 0.88rem;
+			width: 100%;
+			display: flex;
+			color: #fff;
+			align-items: center;
+		}
+		
+		.header-left {
+			min-width: 1rem;
+			line-height: 0.6rem;
+			padding-left: 0.2rem;
+			text-align: left;
+		}
+		
+		.back {
+			font-size: 0.32rem;
+		}
+		
+		.header-content {
+			flex: 1;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			font-size: 0.36rem;
+		}
+		
+		.header-right {
+			text-align: right;
+			min-width: 1rem;
+		}
+		
+		.preview-btn {
+			font-size: 0.32rem;
+			padding-right: 0.2rem;
+		}
+		
+		.face {
+			width: 1.72rem;
+			height: 1.72rem;
+			-webkit-clip-path: circle(50% at 50% 50%);
+			margin-top: -0.86rem;
+		}
+		
+		.tips-text {
+			color: #b6b6b6;
+			font-size: 0.28rem;
+			margin-top: 0.2rem;
+		}
+		
+		.body-content {
+			text-align: center;
+		}
+		
+		.store-select {
+			margin-top: 0.2rem;
+		}
+		
+		.store-select-li {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #eee;
+			height: 0.84rem;
+			line-height: 0.84rem;
+			width: 90%;
+			margin-left: 5%;
+		}
+		
+		.large-spacing {
+			background-color: #f7f7f7;
+			height: 0.12rem;
+			width: 100%;
+		}
+		
+		.no-border {
+			border: none;	
+		}
+		
+		.select-title {
+			font-size: 0.32rem;
+		}
+		
+		.select-content {
+			color: #B6B6B6;
+			font-size: 0.32rem;
+		}
+		
+		.select-content i {
+			font-size: 0.28rem;
+		}
+		
+		.open-store-btn {
+			margin-left: 23%;
+			width: 54%;
+			height: 0.68rem;
+			background-color: #e97b78;
+			line-height: 0.68rem;
+			color: white;
+			border-radius: 0.5rem;
+			font-size: 0.32rem;
+			margin-top: 0.6rem;
+			margin-bottom: 0.6rem;
+		}
+	</style>
+
+	<body>
+		<header>
+			<div class="header-bg">
+				<img src="../icon/kaidianshezhibg.jpg" class="face-bg">
+				<div class="black-bg"></div>
+			</div>
+			<div class="header-top">
+				<div class="header-left">
+					<span class="iconfont back">&#xe600;</span>
+				</div>
+				<div class="header-content">
+					开店设置
+				</div>
+				<div class="header-right">
+					<span class="preview-btn">预览</span>
+				</div>
+			</div>
+		</header>
+		<div class="body-content">
+			<div class="store-avater-box">
+				<img src="../icon/dianputouxiang.jpg" alt="" class="face">
+				<p class="tips-text">点击上传店铺图标</p>
+			</div>
+			<ul class="store-select">
+				<li class="store-select-li">
+					<span class="select-title">店铺名称</span>
+					<span class="select-content">时尚大咖<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<li class="store-select-li no-border">
+					<span class="select-title">微信号</span>
+					<span class="select-content">时尚大咖<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<div class="large-spacing"></div>
+				<li class="store-select-li">
+					<span class="select-title">店铺说明</span>
+					<span class="select-content">时尚大咖<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<li class="store-select-li no-border">
+					<span class="select-title">店铺所在地</span>
+					<span class="select-content">厦门<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<div class="large-spacing"></div>
+				<li class="store-select-li">
+					<span class="select-title">货币</span>
+					<span class="select-content">碧波币<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<li class="store-select-li">
+					<span class="select-title">支付方式</span>
+					<span class="select-content">未设置<i class="iconfont">&#xe602;</i></span>
+				</li>
+				<li class="store-select-li">
+					<span class="select-title">店铺描述</span>
+					<span class="select-content">已开启<i class="iconfont">&#xe602;</i></span>
+				</li>
+			</ul>
+			<div class="open-store-btn">开店</div>
+		</div>
+	</body>
+
+</html>

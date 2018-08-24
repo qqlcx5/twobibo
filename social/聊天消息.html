@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border-bottom: 2px solid #f7f7f7;
+        }
+
+        .header-left {
+            min-width: 1rem;
+            line-height: 0.6rem;
+            padding-left: 0.2rem;
+            text-align: left;
+        }
+
+        .header-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content-item {
+            display: flex;
+            width: 2rem;
+            height: 0.6rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content-item-title {
+            display: flex;
+            justify-content: center;
+            color: #000;
+            width: 0.72rem;
+            height: 0.6rem;
+            box-sizing: border-box;
+            align-items: center;
+            font-size: 0.36rem;
+        }
+
+        .selected {
+            color: #8cafea;
+            border-bottom: 0.04rem solid #8cafea;
+        }
+
+        .header-right {
+            text-align: right;
+            min-width: 1rem;
+        }
+
+        .add-icon {
+            font-size: 0.4rem;
+            color: #d8d8d8;
+            margin-right: 0.2rem;
+        }
+
+        .mglr {
+            margin: 0 0.2rem;
+        }
+
+        .chat-info {
+            height: calc(100vh - 2rem);
+            width: 100%;
+            overflow: auto;
+        }
+
+        .chat-item {
+            width: 100%;
+            height: 1.6rem;
+            display: flex;
+            border-bottom: 0.02rem solid #ccc;
+        }
+
+        .chat-img {
+            min-width: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .chat-img img {
+            max-width: 1rem;
+            max-height: 1rem;
+            border-radius: 50%;
+        }
+
+        .chat-title {
+            width: calc(100% - 1.6rem);
+            height: 1.6rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .chat-top {
+            height: .6rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-top-info {
+            min-width: 1%;
+            max-width: 80%;
+            height: .6rem;
+            line-height: 0.6rem;
+            font-size: 0.32rem;
+            color: #6c6c6c;
+            display: block;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .chat-top-time {
+            flex: 1;
+            min-width: 1.3rem;
+            height: .6rem;
+            display: flex;
+            align-items: center;
+            font-size: 0.24rem;
+            padding-right: 0.2rem;
+            box-sizing: border-box;
+            justify-content: flex-end;
+        }
+
+        /*克里斯小点*/
+        .info-point {
+            display: block;
+            margin-left: 0.1rem;
+            min-width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            background-color: #8cafea;
+        }
+
+        .chat-bottom {
+            height: .4rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .red-point {
+            margin-right: 0.2rem;
+            min-width: .36rem;
+            height: .36rem;
+            border-radius: 50%;
+            background-color: #e97b78;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.1rem;
+        }
+
+        .chat-bottom-info {
+            /*min-width: 10%;*/
+            max-width: 90%;
+            height: 0.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0px;
+            height: 1rem;
+            width: 100%;
+            box-shadow: 0px -1px 1px 0px #eeeeee80;
+            text-align: center;
+            z-index: 99;
+            background-color: #fff;
+        }
+
+        .footer-item {
+            float: left;
+            width: 25%;
+            height: 100%;
+            padding-top: 0.12rem;
+        }
+
+        .footer-item img {
+            width: 0.48rem;
+            height: 0.48rem;
+            margin-bottom: 0.1rem
+        }
+
+        .footer-item p {
+            font-size: 0.2rem;
+            color: #b6b6b6;
+        }
+
+        .footer-tab-selected {
+            color: #8cafea !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+
+        </div>
+        <div class="header-content">
+            <div class="header-content-item">
+                <div class="header-content-item-title selected">聊天</div>
+                <div class="header-content-item-title">朋友</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="iconfont add-icon">&#xe626;</span>
+        </div>
+    </div>
+    <div class="chat-info">
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/系统%20%5B转换%5D%20copy@2x.png" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                         系统通知
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/交易%20copy@2x%20(2).png" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                         交易通知
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/bg.jpg" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                        克里斯
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/bg.jpg" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                        克里斯
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/bg.jpg" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                        克里斯
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/bg.jpg" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                        克里斯
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-item">
+            <div class="chat-img">
+                <img src="../icon/bg.jpg" alt="">
+            </div>
+            <div class="chat-title">
+                <div class="chat-top">
+                    <div class="chat-top-info">
+                        克里斯
+                    </div>
+                    <i class="info-point"></i>
+                    <div class="chat-top-time">12分钟前</div>
+                </div>
+                <div class="chat-bottom">
+                    <div class="chat-bottom-info">作业交了吗？我六点要收的，超过时间大大...</div>
+                    <div class="red-point">99</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-item">
+            <img src="../icon/商城1@2x.png" alt="">
+            <p>商城</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/财富1@2x.png" alt="">
+            <p>财富</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/社交1@2x.png" alt="">
+            <p>社交</p>
+        </div>
+        <div class="footer-item">
+            <img src="../icon/我的2@2x.png" alt="">
+            <p class="footer-tab-selected">我的</p>
+        </div>
+    </footer>
+</body>
+
+</html>
