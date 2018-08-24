@@ -113,9 +113,9 @@
         }
 
         .Addressbook {
-            height: 5rem;
+            height: calc(100vh - 3.2rem);
             width: 100%;
-            background: #000;
+            overflow: auto;
         }
 
         .Addressbook-title {
@@ -253,6 +253,26 @@
 
             </ul>
         </div>
+        <div class="Addressbook-title">
+            C
+        </div>
+        <div class="Addressbook-list">
+            <ul>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+                <li class="Addressbook-item">
+                    <div class="Addressbook-item-img">
+                        <img src="../icon/bg.jpg" alt="">
+                    </div>
+                    <div class="mglr">阿米灵感</div>
+                </li>
+
+            </ul>
+        </div>
     </div>
     <footer>
         <div class="footer-item">
@@ -264,12 +284,12 @@
             <p>财富</p>
         </div>
         <div class="footer-item">
-            <img src="../icon/社交1@2x.png" alt="">
-            <p>社交</p>
+            <img src="../icon/社交2@2x.png" alt="">
+            <p class="footer-tab-selected">社交</p>
         </div>
         <div class="footer-item">
-            <img src="../icon/我的2@2x.png" alt="">
-            <p class="footer-tab-selected">我的</p>
+            <img src="../icon/我的1@2x.png" alt="">
+            <p >我的</p>
         </div>
     </footer>
 </body>
