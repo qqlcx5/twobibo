@@ -115,7 +115,8 @@
         .Addressbook {
             height: calc(100vh - 3.2rem);
             width: 100%;
-            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
 
         .Addressbook-title {
@@ -130,6 +131,7 @@
 
         .Addressbook-item {
             width: 100%;
+            box-sizing: border-box;
             height: 1.6rem;
             background-color: #fff;
             display: flex;
