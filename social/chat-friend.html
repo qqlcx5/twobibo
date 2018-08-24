@@ -54,7 +54,7 @@
             font-size: 0.36rem;
         }
 
-        .noSelected {
+        .selected {
             color: #8cafea;
             border-bottom: 0.04rem solid #8cafea;
         }
@@ -65,7 +65,7 @@
         }
 
         .add-icon {
-            font-size: 0.55rem;
+            font-size: 0.4rem;
             color: #d8d8d8;
             padding-right: 0.2rem;
         }
@@ -91,6 +91,8 @@
         }
 
         .search-icon {
+            max-width: .36rem;
+            max-height: .36rem;
             margin-right: 0.1rem;
         }
 
@@ -187,10 +189,9 @@
         </div>
         <div class="header-content">
             <div class="header-content-item">
-                <div class="header-content-item-title noSelected">聊天</div>
-                <div class="header-content-item-title">朋友</div>
+                <div class="header-content-item-title" onClick="location.href='chat.html'">聊天</div>
+                <div class="header-content-item-title selected">朋友</div>
             </div>
-
         </div>
         <div class="header-right">
             <span class="iconfont add-icon">&#xe626;</span>
@@ -198,7 +199,7 @@
     </div>
     <div class="search-box">
         <div class="search">
-            <span class="iconfont search-icon">&#xe626;</span>
+            <img class="search-icon" src="../icon/搜索%20copy@2x.png" alt="">
             搜索
         </div>
     </div>
