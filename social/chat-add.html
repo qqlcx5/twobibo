@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加好友</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <style>
+        body {
+            background: #f7f7f7;
+            height: 100vh;
+        }
+        .header {
+            height: 0.88rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0px 2px 4px 0px rgba(238, 238, 238, 0.5);
+        }
+        .header-left {
+            min-width: 1rem;
+            line-height: 0.6rem;
+            padding-left: 0.2rem;
+            text-align: left;
+        }
+        .back {
+            font-size: 0.4rem;
+        }
+        .header-content {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            font-size: 0.36rem;
+        }
+        .header-right {
+            text-align: right;
+            min-width: 1rem;
+            position: relative;
+        }
+        .search-box {
+            width: 100%;
+            height: 1.2rem;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search {
+            width: 6rem;
+            height: 0.7rem;
+            background-color: #ffffff;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b6b6b6;
+        }
+
+        .search-icon {
+            max-width: .36rem;
+            max-height: .36rem;
+            margin-right: 0.1rem;
+        }
+        .search-icon-t{
+            max-width: .36rem;
+            max-height: .36rem;
+            margin-left: 0.8rem;
+        }
+        .cur-list{
+            width: 100%;
+            height: 1rem;
+            display: inline-flex;
+            border-bottom: 0.02rem solid  #eeeeee;
+        }
+        .cur-left {
+            min-width: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.3rem;
+
+        }
+        .cur-left img {
+            max-width: 1.2rem;
+            max-height: 1.2rem;
+            border-radius: 50%;
+            margin-left: 0.1rem;
+        }
+        .cur-mid {
+            display: inline-flex;
+            height: 1rem;
+            flex: 1;
+            line-height: 1rem;
+            color: #6c6c6c;
+        }
+        .bg-color{
+            background-color: #ffffff;
+        }
+        .icon_n{
+            max-width: 0.5rem;
+            max-height: 0.5rem;
+            background: url("../icon/扫一扫 copy@2x.png") no-repeat center;
+            background-size:0.5rem 0.5rem;
+        }
+        .icon_g{
+            max-width: 0.5rem;
+            max-height: 0.5rem;
+            background: url("../icon/通讯录 (2) copy@2x.png") no-repeat center;
+            background-size:0.5rem 0.5rem;
+        }
+        .icon_h{
+            max-width: 0.5rem;
+            max-height: 0.5rem;
+            background: url("../icon/12附近的人 copy@2x.png") no-repeat center;
+            background-size:0.5rem 0.5rem;
+        }
+        .cur-font{
+            width: 0.5rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="header-left" onClick="javascript:history.back(-1);">
+        <span class="iconfont back">&#xe600;</span>
+    </div>
+    <div class="header-content">添加好友</div>
+    <div class="header-right">    </div>
+</div>
+    <div class="search-box">
+        <div class="search">
+        <img class="search-icon" src="../icon/搜索%20copy@2x.png" alt=""> 碧波账号/手机号<img class="search-icon-t" src="../icon/语音%20copy@2x.png">
+    </div>
+    </div>
+    <div class="cur-list bg-color">
+        <div class="cur-left icon_n"></div>
+        <div class="cur-mid">扫一扫</div>
+        <div class="cur-font">
+            <span class="iconfont">&#xe602;</span>
+        </div>
+    </div>
+    <div class="cur-list bg-color">
+        <div class="cur-left icon_g"></div>
+        <div class="cur-mid">通讯录好友</div>
+        <div class="cur-font">
+            <span class="iconfont">&#xe602;</span>
+        </div>
+    </div>
+    <div class="cur-list bg-color">
+        <div class="cur-left icon_h"></div>
+        <div class="cur-mid">附近的人</div>
+        <div class="cur-font">
+            <span class="iconfont">&#xe602;</span>
+        </div>
+    </div>
+
+</body>
+</html>

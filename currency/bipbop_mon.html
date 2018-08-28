@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>碧波币</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<style>
+    body {
+        background: #f7f7f7;
+        height: 100vh;
+    }
+    .header {
+        width: 100%;
+        height: 50vw;
+        background: url("../icon/bip_00.png") no-repeat center;
+        background-size: 100% 50vw;
+    }
+    .bg-color{
+         background-color: #ffffff;
+     }
+    .bg-blue{
+        background-color: #8cafea;
+    }
+    .icon_l{
+        max-width: 0.5rem;
+        max-height: 0.5rem;
+        background: url("../icon/bip_02.png") no-repeat center;
+        background-size:0.5rem 0.5rem;
+    }
+    icon_m{
+        max-width: 0.5rem;
+        max-height: 0.5rem;
+        background: url("../icon/bip_02.png") no-repeat center;
+        background-size:0.5rem 0.5rem;
+    }
+
+    .header-top {
+        margin-top: 0.4rem;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        height: .52rem;
+
+    }
+    .bip_back {
+        font-size: 0.4rem;
+        color: #ffffff;
+    }
+    .header-left {
+        min-width: 1rem;
+        line-height: 0.6rem;
+        padding-left: 0.2rem;
+        text-align: left;
+    }
+
+    .bip_mglr{
+        margin: 0 0.4rem;
+    }
+    .bip_mglr img {
+        max-width: 38rem;
+        max-height: .38rem;
+        margin-right: 0.1rem;
+    }
+    .header-bip_input {
+        flex: 1;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0.52rem;
+    }
+    .bip_bom{
+        width: 100%;
+        height:9.6rem;
+        background-color: #f7f7f7;
+    }
+    .bip_intr{
+        width: 100%;
+    }
+    .bip-title{
+        display: inline-flex;
+        height: 0.44rem;
+        width: 100%;
+        /*background: #eee;*/
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .small_border{
+        width: 0.1rem;
+        height: 0.4rem;
+        background-color: #8cafea;
+        /*font-size:1.2rem;字体大小等于12px;*/
+    }
+    .bip_fontsize{
+        font-size: 16px;
+        font-weight: bold;
+        color: #6c6c6c;
+        margin-left:0.5rem;
+
+    }
+    .bip_font_gray{
+        font-size: 14px;
+        line-height: 26px;
+        color: #b6b6b6;
+    }
+    .cur-list{
+        width: 100%;
+        height: 1rem;
+        display: inline-flex;
+        border-bottom: 0.02rem solid  #eeeeee;
+    }
+    .cur-left {
+        min-width: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.3rem;
+
+    }
+    .cur-left img {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+        border-radius: 50%;
+        margin-left: 0.1rem;
+    }
+    .cur-mid {
+        display: inline-flex;
+        height: 1rem;
+        flex: 1;
+        line-height: 1rem;
+        color: #6c6c6c;
+    }
+    .cur-font{
+        width: 0.5rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .bip_box{
+        margin-top: 0.4rem;
+        margin-left: 0.5rem;
+    }
+    .bip_box_li{
+        width: 1.8rem;
+        height: 1.5rem;
+        border-radius:0.2rem ;
+        display:inline-block;
+        margin-left: 0.2rem;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header-top">
+        <div class="header-left" onClick="javascript:history.back(-1);">
+            <span class="iconfont bip_back">&#xe600;</span>
+        </div>
+        <div class="header-bip_input">
+            <span>碧波币</span>
+        </div>
+        <div class="bip_mglr">
+            <img src="../icon/bip_01.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="bip_bom">
+    <div class="bip_intr">
+        <div class="bip-title">
+            <div class="small_border"> </div>
+            <span class="bip_fontsize">碧波币介绍</span>
+        </div>
+    </div>
+        <div class="cur-list">
+            <div class="cur-left">
+                <img src="../icon/cur_04.png" alt="">
+            </div>
+            <div class="cur-mid">
+                <span class="bip_font_gray">碧波币（bibobi）是一种P2P形式的数字货币</span>
+            </div>
+        </div>
+    <div class="bip_intr">
+        <div class="bip-title">
+            <div class="small_border"> </div>
+            <span class="bip_fontsize">碧波币地址</span>
+        </div>
+    </div>
+    <div class="cur-list bg-color">
+        <div class="cur-left icon_l"></div>
+        <div class="cur-mid">你的碧波地址</div>
+        <div class="cur-font">
+            <span class="iconfont">&#xe602;</span>
+        </div>
+    </div>
+    <div class="cur-list bg-color">
+        <div class="cur-left icon_l"></div>
+        <div class="cur-mid">发送的地址</div>
+        <div class="cur-font">
+            <span class="iconfont">&#xe602;</span>
+        </div>
+    </div>
+            <div class="bip_box">
+                <ul class="bip_box_ul">
+                    <li class="bip_box_li bg-blue">充值</li>
+                    <li class="bip_box_li bg-blue">提取</li>
+                    <li class="bip_box_li bg-blue">兑换</li>
+                </ul>
+            </div>
+
+
+
+
+</div>
+</body>
+</html>

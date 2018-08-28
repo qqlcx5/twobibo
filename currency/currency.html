@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>币种换算</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <style type="text/css">
+        body {
+            background: #f7f7f7;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .bg-color{
+            background-color: #ffffff;
+        }
+
+        .header {
+            height: 0.88rem;
+            width: 100%;
+            display: flex;
+            background: #fff;
+            align-items: center;
+            box-shadow: 0px 2px 4px 0px rgba(238, 238, 238, 0.5);
+        }
+
+        .header-left {
+            min-width: 1rem;
+            line-height: 0.6rem;
+            padding-left: 0.2rem;
+            text-align: left;
+        }
+
+        .back {
+            font-size: 0.4rem;
+        }
+
+        .header-content {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            font-size: 0.36rem;
+        }
+
+        .header-right {
+            text-align: right;
+            min-width: 1rem;
+            position: relative;
+        }
+
+        .cur-list{
+            width: 100%;
+            height: 1.6rem;
+            display: flex;
+            border-bottom: 0.02rem solid  #eeeeee;
+        }
+        .cur-left {
+            min-width: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .cur-left img {
+            max-width: 1.2rem;
+            max-height: 1.2rem;
+            border-radius: 50%;
+            margin-left: 0.1rem;
+        }
+        .cur-mid {
+            flex: 1;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            margin-left: 0.1rem;
+            font-size: 0.2rem;
+            color: #6c6c6c;
+        }
+        .cur-right{
+            margin-top: 0.5rem;
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 0.45rem;
+        }
+        .cur-right p {
+            font-family: PingFangSC-Medium;
+            font-size: 0.4rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #6c6c6c;
+        }
+        .cur-right span{
+            font-size: 0.2rem;
+            align-content: center;
+            color: #b6b6b6;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left" onClick="javascript:history.back(-1);">
+        <span class="iconfont back">&#xe600;</span>
+    </div>
+    <div class="header-content"> 币种换算</div>
+    <div class="header-right"> </div>
+</div>
+
+<div class="cur-list">
+    <div class="cur-left">
+        <img src="../icon/cur_04.png" alt="">
+    </div>
+    <div class="cur-mid">
+        <span>ENY</span>
+    </div>
+    <div class="cur-right">
+        <p>1000</p>
+        <span>比特币</span>
+    </div>
+</div>
+
+<div class="cur-list bg-color">
+    <div class="cur-left">
+        <img src="../icon/cur_03.png" alt="">
+    </div>
+    <div class="cur-mid">
+        <span>BNY</span>
+    </div>
+    <div class="cur-right">
+        <p>0.5</p>
+        <span>比特币</span>
+    </div>
+</div>
+
+<div class="cur-list bg-color">
+    <div class="cur-left">
+        <img src="../icon/cur_02.png" alt="">
+    </div>
+    <div class="cur-mid">
+        <span>LNY</span>
+    </div>
+    <div class="cur-right">
+        <p>26</p>
+        <span>比特币</span>
+    </div>
+</div>
+
+<div class="cur-list bg-color">
+    <div class="cur-left">
+        <img src="../icon/cur_01.png" alt="">
+    </div>
+    <div class="cur-mid">
+        <span>ENY</span>
+    </div>
+    <div class="cur-right">
+        <p>350</p>
+        <span>比特币</span>
+    </div>
+</div>
+
+</body>
+</html>
