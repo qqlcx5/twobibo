@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background: url(../icon/background.png) no-repeat center;
+            background-size: 100% 100vh;
+            overflow: hidden;
+            color: #a7a7a7;
+        }
+
+        .logo {
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            position: relative;
+        }
+
+        .regist {
+            position: absolute;
+            top: 0.2rem;
+            right: .2rem;
+            color: #fff;
+            font-size: 0.32rem;
+        }
+
+        .mobile {
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            color: #fff;
+
+        }
+
+        .mobile div:nth-of-type(1) {
+           flex: 0 0 50%;
+            line-height: 10vh;
+            height: 10vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .mobile div:nth-of-type(2) {
+           flex: 0 0 50%;
+            line-height: 10vh;
+            height: 10vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .selectd {
+            color: #8cafea;
+            /* border-bottom: 4px solid #ddd; */
+        }
+
+        .mobile .icon {
+            width: 0.4rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .logo img {
+            max-width: 2rem;
+            max-height: 2rem;
+        }
+
+        .login {
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.4rem;
+            box-sizing: border-box;
+        }
+
+        .login div:nth-of-type(1) {
+            position: relative;
+        }
+
+        .login div:nth-of-type(2) {
+            position: relative;
+        }
+
+        .login div:nth-of-type(3) {
+            position: relative;
+        }
+
+        .login input {
+            width: 100%;
+            height: 1rem;
+            border-radius: 0.6rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            background: none;
+            box-sizing: border-box;
+            border: solid 1px #ffffff;
+        }
+
+        .login .img {
+            position: absolute;
+            top: 0;
+            bottom: 50%;
+            margin-top: 0.25rem;
+            left: 0.3rem;
+            width: 0.4rem;
+            height: 0.5rem;
+        }
+
+        .btn {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            border-radius: 0.6rem;
+            margin-top: 0.5rem;
+            text-align: center;
+            background: #8cafea;
+            color: #fff;
+            font-size: 0.32rem;
+        }
+
+        input::placeholder {
+            color: #b6b6b6;
+        }
+
+        .login-desc {
+            height: 5vh;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .friend-style {
+            height: 5vh;
+            width: 100%;
+            margin-top: 0.4rem;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .friend-title {
+            font-size: .28rem;
+            color: #b6b6b6;
+            padding: 0 0.2rem;
+        }
+
+        .borders {
+            flex: 1;
+            height: 2px;
+            background: #b6b6b6;
+        }
+
+        .QQ-login {
+            height: 15vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .friend-login {
+            flex: 0 0 33.33%;
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .friend-img {
+            height: 12vh;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .friend-desc {
+            height: 3vh;
+            width: 100%;
+            text-align: center;
+        }
+
+        .friend-login img {
+            max-width: 0.8rem;
+            max-height: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo">
+            <div class="regist">注册</div>
+            <img src="../icon/logo.png" alt="">
+        </div>
+        <div class="mobile">
+            <div class="selectd"><img class="icon" src="../icon/登录.png" alt="">账号登录</div>
+            <div><img class="icon" src="../icon/手机.png" alt="">手机登录</div>
+        </div>
+
+        <div class="login">
+            <div>
+                <img src="../icon/手机.png" class="img" alt="">
+                <input type="text" placeholder="输入账号登录">
+            </div>
+            <div>
+                <img src="../icon/密码.png" class="img" alt="">
+                <input type="text" placeholder="输入密码">
+            </div>
+            <div class="btn">登录</div>
+            <div class="login-desc">
+                ＊登录即表示您同意 <a href="#">《碧波世界用户协议》</a>
+            </div>
+            <div class="friend-style">
+                <div class="borders"></div>
+                <div class="friend-title">已有账号，快速登录</div>
+                <div class="borders"></div>
+            </div>
+            <div class="QQ-login">
+                <div class="friend-login">
+                    <div class="friend-img">
+                        <img src="../icon/qq.png" alt="">
+                    </div>
+                    <div class="friend-desc">
+                        QQ
+                    </div>
+                </div>
+                <div class="friend-login">
+                    <div class="friend-img">
+                        <img src="../icon/wxchat.png" alt="">
+                    </div>
+                    <div class="friend-desc">
+                        微信
+                    </div>
+                </div>
+                <div class="friend-login">
+                    <div class="friend-img">
+                        <img src="../icon/微博.png" alt="">
+                    </div>
+                    <div class="friend-desc">
+                        微博
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

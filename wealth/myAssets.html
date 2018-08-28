@@ -1,322 +1,323 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>财富</title>
-	</head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/border.css">
-	<style type="text/css">
-		body {
-			background: #fff;
-		}
-		header {
-			width: 100%;
-			height: 1rem;
-			background: #8cafea;
-		}
-		
-		.header-top {
-			margin-top: 0.2rem;
-			display: inline-flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 100%;
-			height: 0.6rem;
-		}
-		
-		.mglr {
-			margin: 0 0.15rem;
-		}
-		
-		.header-title {
-			color: white;
-			font-size: 0.36rem;
-		}
-		
-		header img {
-			width: 0.4rem;
-		}
-		
-		.user-info {
-			height: 1.8rem;
-			width: 100%;
-			text-align: center;
-		}
-		
-		.user-info {
-			background: #8cafea;
-			height: 3.5rem;
-		}
-		
-		.assets {
-			font-size: 0.72rem;
-			color: white;
-			padding-top: 0.1rem;
-		}
-		
-		.unit {
-			font-size: 0.36rem;
-			color: #fff;
-			margin-top: 0.24rem;
-		}
-		
-		.server-table {
-			margin-top: 0.6rem;
-			width: 100%;
-			text-align: center;
-			vertical-align: middle;
-		}
-		
-		.server-table tr {
-			height: 1.2rem;
-		}
-		
-		.table-icon {
-			width: 0.6rem;
-		}
-		
-		.table-text {
-			margin-top: 0.24rem;
-			color: #fff;
-		}
-		
-		.currency-list {
-			width: 100%;
-			height: 6rem;
-			overflow-y: auto;
-			/*padding-bottom: 0.05rem;*/
-		}
-		
-		.currency-list li {
-			height: 1.4rem;
-			box-shadow: 0px 1px 1px 0px rgba(227, 227, 227, 0.5);
-		}
-		
-		.currency-list img {
-			width: 0.62rem;
-			margin-left: 0.5rem;
-			float: left;
-			margin-top: 0.39rem;
-		}
-		
-		.contact-item-content {
-			display: inline-block;
-			margin-left: 0.3rem;
-			margin-top: 0.39rem;
-		}
-		
-		.currency-name {
-			font-size: 0.36rem;
-			color: #6a6a6a;
-		}
-		
-		.currency-introduction {
-			font-size: 0.28rem;
-			color: #919191;
-			margin-top: 0.1rem;
-		}
-		
-		.right-arrow {
-			display: inline-block;
-			width: 0.16rem;
-			height: 0.16rem;
-			border-top: 2px solid #b6b6b6;
-			border-right: 2px solid #b6b6b6;
-			transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			float: right;
-			margin-top: 0.65rem;
-			margin-right: 0.5rem;
-		}
-		
-		.get-more {
-			position: fixed;
-			bottom: 1rem;
-			width: 100%;
-			height: 1.8rem;
-			background: #fff;
-			box-shadow: 0px -1px 1px 0px rgba(227, 227, 227, 0.5);
-		}
-		
-		.to-task,
-		.to-game {
-			text-align: center;
-			width: 42.6%;
-			height: 1.36rem;
-			background: #8CAFEA;
-			border-radius: 8px;
-			margin-top: 0.22rem;
-		}
-		
-		.to-task {
-			float: left;
-			margin-left: 5.6%;
-		}
-		
-		.to-game {
-			float: right;
-			margin-right: 5.6%;
-		}
-		
-		.to-task img {
-			height: 0.46rem;
-			margin-top: 0.22rem;
-		}
-		
-		.to-game img {
-			height: 0.52rem;
-			margin-top: 0.22rem;
-		}
-		
-		.get-more p {
-			color: white;
-			font-size: 0.28rem;
-			margin-top: 0.1rem;
-		}
-		
-		footer {
-			position: fixed;
-			bottom: 0px;
-			height: 1rem;
-			width: 100%;
-			box-shadow: 0px -1px 1px 0px rgba(238, 238, 238, 0.5);
-			text-align: center;
-			z-index: 99;
-			background-color: #fff;
-		}
-		
-		.footer-item {
-			float: left;
-			width: 25%;
-			height: 100%;
-			padding-top: 0.12rem;
-		}
-		
-		.footer-item img {
-			width: 0.48rem;
-			height: 0.48rem;
-			margin-bottom: 0.1rem
-		}
-		
-		.footer-item p {
-			font-size: 0.2rem;
-			color: #b6b6b6;
-		}
-		
-		.footer-tab-selected {
-			color: #8cafea!important;
-		}
-	</style>
+<head>
+	<meta charset="UTF-8">
+	<title>财富</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/border.css">
+<style type="text/css">
+	body {
+		background: #fff;
+	}
 
-	<body>
-		<header>
-			<div class="header-top">
-				<div class="mglr">
-					<img src="../icon/sao@2x.png" alt="">
-				</div>
-				<div class="header-input">
-					<span class="header-title">我的资产</span>
-				</div>
-				<div class="mglr">
-					<img src="../icon/search@2x.png" alt="">
-				</div>
+	header {
+		width: 100%;
+		height: 1rem;
+		background: #8cafea;
+	}
+
+	.header-top {
+		margin-top: 0.2rem;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 0.6rem;
+	}
+
+	.mglr {
+		margin: 0 0.15rem;
+	}
+
+	.header-title {
+		color: white;
+		font-size: 0.36rem;
+	}
+
+	header img {
+		width: 0.4rem;
+	}
+
+	.user-info {
+		height: 1.8rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.user-info {
+		background: #8cafea;
+		height: 3.5rem;
+	}
+
+	.assets {
+		font-size: 0.72rem;
+		color: white;
+		padding-top: 0.1rem;
+	}
+
+	.unit {
+		font-size: 0.36rem;
+		color: #fff;
+		margin-top: 0.24rem;
+	}
+
+	.server-table {
+		margin-top: 0.6rem;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.server-table tr {
+		height: 1.2rem;
+	}
+
+	.table-icon {
+		width: 0.6rem;
+	}
+
+	.table-text {
+		margin-top: 0.24rem;
+		color: #fff;
+	}
+
+	.currency-list {
+		width: 100%;
+		height: 6rem;
+		overflow-y: auto;
+		/*padding-bottom: 0.05rem;*/
+	}
+
+	.currency-list li {
+		height: 1.4rem;
+		box-shadow: 0px 1px 1px 0px rgba(227, 227, 227, 0.5);
+	}
+
+	.currency-list img {
+		width: 0.62rem;
+		margin-left: 0.5rem;
+		float: left;
+		margin-top: 0.39rem;
+	}
+
+	.contact-item-content {
+		display: inline-block;
+		margin-left: 0.3rem;
+		margin-top: 0.39rem;
+	}
+
+	.currency-name {
+		font-size: 0.36rem;
+		color: #6a6a6a;
+	}
+
+	.currency-introduction {
+		font-size: 0.28rem;
+		color: #919191;
+		margin-top: 0.1rem;
+	}
+
+	.right-arrow {
+		display: inline-block;
+		width: 0.16rem;
+		height: 0.16rem;
+		border-top: 2px solid #b6b6b6;
+		border-right: 2px solid #b6b6b6;
+		transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		float: right;
+		margin-top: 0.65rem;
+		margin-right: 0.5rem;
+	}
+
+	.get-more {
+		position: fixed;
+		bottom: 1rem;
+		width: 100%;
+		height: 1.8rem;
+		background: #fff;
+		box-shadow: 0px -1px 1px 0px rgba(227, 227, 227, 0.5);
+	}
+
+	.to-task,
+	.to-game {
+		text-align: center;
+		width: 42.6%;
+		height: 1.36rem;
+		background: #8CAFEA;
+		border-radius: 8px;
+		margin-top: 0.22rem;
+	}
+
+	.to-task {
+		float: left;
+		margin-left: 5.6%;
+	}
+
+	.to-game {
+		float: right;
+		margin-right: 5.6%;
+	}
+
+	.to-task img {
+		height: 0.46rem;
+		margin-top: 0.22rem;
+	}
+
+	.to-game img {
+		height: 0.52rem;
+		margin-top: 0.22rem;
+	}
+
+	.get-more p {
+		color: white;
+		font-size: 0.28rem;
+		margin-top: 0.1rem;
+	}
+
+	footer {
+		position: fixed;
+		bottom: 0px;
+		height: 1rem;
+		width: 100%;
+		box-shadow: 0px -1px 1px 0px rgba(238, 238, 238, 0.5);
+		text-align: center;
+		z-index: 99;
+		background-color: #fff;
+	}
+
+	.footer-item {
+		float: left;
+		width: 25%;
+		height: 100%;
+		padding-top: 0.12rem;
+	}
+
+	.footer-item img {
+		width: 0.48rem;
+		height: 0.48rem;
+		margin-bottom: 0.1rem
+	}
+
+	.footer-item p {
+		font-size: 0.2rem;
+		color: #b6b6b6;
+	}
+
+	.footer-tab-selected {
+		color: #8cafea !important;
+	}
+</style>
+
+<body>
+	<header>
+		<div class="header-top">
+			<div class="mglr">
+				<img src="../icon/sao@2x.png" alt="">
 			</div>
-		</header>
-		<div class="body-content">
-			<div class="user-info">
-				<p class="assets">888888.66</p>
-				<p class="unit">CNY</p>
-				<table class="server-table" cellspacing="0" cellpadding="0">
-					<tr>
-						<td>
-							<img src="../icon/duihuan@2x.png" alt="" class="table-icon"><br />
-							<p class="table-text">兑换记录</p>
-						</td>
-						<td>
-							<img src="../icon/chongzhi@2x.png" alt="" class="table-icon"><br />
-							<p class="table-text">充币记录</p>
-						</td>
-						<td class="no-right-border">
-							<img src="../icon/tibijilu@2x.png" alt="" class="table-icon"><br />
-							<p class="table-text">提币记录</p>
-						</td>
-					</tr>
-				</table>
+			<div class="header-input">
+				<span class="header-title">我的资产</span>
 			</div>
-			<ul class="currency-list">
-				<li>
-					<img src="../icon/B@2x.png" />
-					<div class="contact-item-content">
-						<p class="currency-name">AAA</p>
-						<p class="currency-introduction">(bibobi)
-							<p>
-					</div>
-					<div class="right-arrow"></div>
-				</li>
-				<li>
-					<img src="../icon/B@2x.png" />
-					<div class="contact-item-content">
-						<p class="currency-name">BBB</p>
-						<p class="currency-introduction">(bibobi)
-							<p>
-					</div>
-					<div class="right-arrow"></div>
-				</li>
-				<li>
-					<img src="../icon/B@2x.png" />
-					<div class="contact-item-content">
-						<p class="currency-name">CCC</p>
-						<p class="currency-introduction">(bibobi)
-							<p>
-					</div>
-					<div class="right-arrow"></div>
-				</li>
-				<li>
-					<img src="../icon/B@2x.png" />
-					<div class="contact-item-content">
-						<p class="currency-name">DDD</p>
-						<p class="currency-introduction">(bibobi)
-							<p>
-					</div>
-					<div class="right-arrow"></div>
-				</li>
-			</ul>
+			<div class="mglr">
+				<img src="../icon/search@2x.png" alt="">
+			</div>
 		</div>
-		<div class="get-more">
-			<div class="to-task">
-				<img src="../icon/zuorenwu@2x.png" />
-				<p class="btn-text">做任务赚币</p>
-			</div>
-			<div class="to-game">
-				<img src="../icon/playgame@2x.png" />
-				<p class="btn-text">玩游戏赚币</p>
-			</div>
+	</header>
+	<div class="body-content">
+		<div class="user-info">
+			<p class="assets">888888.66</p>
+			<p class="unit">CNY</p>
+			<table class="server-table" cellspacing="0" cellpadding="0">
+				<tr>
+					<td onClick="location.href='redemptionRecord.html'">
+						<img src="../icon/duihuan@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">兑换记录</p>
+					</td>
+					<td onClick="location.href='CurrencyREcord.html'">
+						<img src="../icon/chongzhi@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">充币记录</p>
+					</td>
+					<td class="no-right-border">
+						<img src="../icon/tibijilu@2x.png" alt="" class="table-icon"><br />
+						<p class="table-text">提币记录</p>
+					</td>
+				</tr>
+			</table>
 		</div>
-		<footer>
-			<div class="footer-item" onClick="location.href='../index.html'">
-				<img src="../icon/shangcheng1@2x.png" alt="">
-				<p>商城</p>
-			</div>
-			<div class="footer-item" onClick="location.href='../wealth/myAssets.html'">
-				<img src="../icon/wealth2@2x.png" alt="">
-				<p class="footer-tab-selected">财富</p>
-			</div>
-			<div class="footer-item" onClick="location.href='../social/chat.html'">
-				<img src="../icon/social1@2x.png" alt="">
-				<p>社交</p>
-			</div>
-			<div class="footer-item" onClick="location.href='../my/my.html'">
-				<img src="../icon/my1@2x.png" alt="">
-				<p>我的</p>
-			</div>
-		</footer>
-	</body>
+		<ul class="currency-list">
+			<li>
+				<img src="../icon/B@2x.png" />
+				<div class="contact-item-content">
+					<p class="currency-name">AAA</p>
+					<p class="currency-introduction">(bibobi)
+						<p>
+				</div>
+				<div class="right-arrow"></div>
+			</li>
+			<li>
+				<img src="../icon/B@2x.png" />
+				<div class="contact-item-content">
+					<p class="currency-name">BBB</p>
+					<p class="currency-introduction">(bibobi)
+						<p>
+				</div>
+				<div class="right-arrow"></div>
+			</li>
+			<li>
+				<img src="../icon/B@2x.png" />
+				<div class="contact-item-content">
+					<p class="currency-name">CCC</p>
+					<p class="currency-introduction">(bibobi)
+						<p>
+				</div>
+				<div class="right-arrow"></div>
+			</li>
+			<li>
+				<img src="../icon/B@2x.png" />
+				<div class="contact-item-content">
+					<p class="currency-name">DDD</p>
+					<p class="currency-introduction">(bibobi)
+						<p>
+				</div>
+				<div class="right-arrow"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="get-more">
+		<div class="to-task" onClick="location.href='renwuzhengbi.html'">
+			<img src="../icon/zuorenwu@2x.png" />
+			<p class="btn-text">做任务赚币</p>
+		</div>
+		<div class="to-game">
+			<img src="../icon/playgame@2x.png" />
+			<p class="btn-text">玩游戏赚币</p>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-item" onClick="location.href='../index.html'">
+			<img src="../icon/shangcheng1@2x.png" alt="">
+			<p>商城</p>
+		</div>
+		<div class="footer-item" onClick="location.href='../wealth/myAssets.html'">
+			<img src="../icon/wealth2@2x.png" alt="">
+			<p class="footer-tab-selected">财富</p>
+		</div>
+		<div class="footer-item" onClick="location.href='../social/chat.html'">
+			<img src="../icon/social1@2x.png" alt="">
+			<p>社交</p>
+		</div>
+		<div class="footer-item" onClick="location.href='../my/my.html'">
+			<img src="../icon/my1@2x.png" alt="">
+			<p>我的</p>
+		</div>
+	</footer>
+</body>
 
 </html>

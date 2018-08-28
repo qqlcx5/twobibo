@@ -15,6 +15,7 @@
             width: 100%;
             overflow: hidden;
         }
+
         .header {
             height: 1rem;
             width: 100%;
@@ -52,6 +53,7 @@
             box-sizing: border-box;
             align-items: center;
             font-size: 0.36rem;
+            cursor: default;
         }
 
         .selected {
@@ -182,6 +184,23 @@
         .footer-tab-selected {
             color: #8cafea !important;
         }
+
+        .list {
+            position: absolute;
+            top: 1.58rem;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 0.4rem;
+        }
+
+        .item {
+            line-height: 0.4rem;
+            text-align: center;
+            color: #888;
+        }
     </style>
 </head>
 
@@ -202,8 +221,7 @@
     </div>
     <div class="search-box">
         <div class="search">
-            <img class="search-icon" src="../icon/搜索%20copy@2x.png" alt="">
-            搜索
+            <img class="search-icon" src="../icon/搜索%20copy@2x.png" alt=""> 搜索
         </div>
     </div>
     <div class="friend-box">
@@ -217,6 +235,31 @@
         </ul>
     </div>
     <div class="Addressbook">
+        <div>
+            <ul class="list">
+                <li class="item">A</li>
+                <li class="item">B</li>
+                <li class="item">C</li>
+                <li class="item">D</li>
+                <li class="item">E</li>
+                <li class="item">F</li>
+                <li class="item">G</li>
+                <li class="item">H</li>
+                <li class="item">I</li>
+                <li class="item">J</li>
+                <li class="item">K</li>
+                <li class="item">L</li>
+                <li class="item">N</li>
+                <li class="item">M</li>
+                <li class="item">O</li>
+                <li class="item">P</li>
+                <li class="item">Q</li>
+                <li class="item">R</li>
+                <li class="item">R</li>
+                <li class="item">R</li>
+                <li class="item">R</li>
+            </ul>
+        </div>
         <div class="Addressbook-title">
             A
         </div>
@@ -284,7 +327,7 @@
         </div>
         <div class="footer-item" onClick="location.href='../wealth/myAssets.html'">
             <img src="../icon/wealth1@2x.png" alt="">
-            <p >财富</p>
+            <p>财富</p>
         </div>
         <div class="footer-item" onClick="location.href='../social/chat.html'">
             <img src="../icon/social2@2x.png" alt="">
